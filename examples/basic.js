@@ -9,7 +9,8 @@ var epubStream = epubGenerator({
 		title: 'Hello World',
 		author: 'LastLeaf',
 		description: 'Made with epub-generator.',
-		rights: 'CC-BY http://creativecommons.org/licenses/by/4.0/'
+		rights: 'CC-BY http://creativecommons.org/licenses/by/4.0/',
+		subjects: ['Ebooks', 'Documentation', 'Software']
 	})
 	.add('index.xhtml', xhtml, {
 		title: 'HELLO',

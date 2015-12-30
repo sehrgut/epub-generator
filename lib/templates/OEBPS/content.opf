@@ -9,6 +9,7 @@
 		{{#if rights}}<dc:rights>{{rights}}</dc:rights>{{/if}}
 		{{#if date}}<dc:date opf:event="modification">{{date}}</dc:date>{{/if}}
 		{{#if cover}}<meta name="cover" content="{{cover}}" />{{/if}}
+		{{#each subjects}}<dc:subject>{{this}}</dc:subject>{{/each}}
 	</metadata>
 	<manifest>
 		<item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml" />
