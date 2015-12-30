@@ -1,16 +1,25 @@
 {
-	"name": "epub-generator",
-	"version": "1.0.0",
-	"engines": { "node": ">=0.10.0" },
-	"homepage": "https://github.com/LastLeaf/epub-generator",
-	"repository": { "type": "git", "url": "https://github.com/LastLeaf/epub-generator.git" },
-	"License": "MIT",
-	"dependencies": {
-		"node-uuid": "^1.4.1",
-		"handlebars": "^2.0.0",
-		"zip-stream": "~0.4.1",
-		"mime": "^1.2.11"
-	},
-	"author": "LastLeaf <bqfu@163.com> http://lastleaf.me",
-	"contributors": []
+  "name": "epub-generator",
+  "version": "1.0.1",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "homepage": "https://github.com/sehrgut/epub-generator",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sehrgut/epub-generator.git"
+  },
+  "License": "MIT",
+  "dependencies": {
+    "handlebars": "^2.0.0",
+    "mime": "^1.2.11",
+    "node-uuid": "^1.4.1",
+    "sanitize-filename": "^1.5.3",
+    "unicode-3.0.1": "^0.1.5",
+    "unorm": "^1.4.1",
+    "uslug": "^1.0.3",
+    "zip-stream": "~0.4.1"
+  },
+  "author": "LastLeaf <bqfu@163.com> http://lastleaf.me",
+  "contributors": ["Keith Beckman <kbeckman@becknet.com>"]
 }
