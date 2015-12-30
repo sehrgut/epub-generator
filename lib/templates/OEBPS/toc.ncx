@@ -16,7 +16,7 @@
 			<navLabel>
 				<text>{{title}}</text>
 			</navLabel>
-			<content src="{{path}}"/>
+			<content src="{{urlencode_path path}}"/>
 		</navPoint>
 		{{/if}}{{/each}}
 	</navMap>

@@ -12,12 +12,12 @@
 	</metadata>
 	<manifest>
 		<item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml" />
-		{{#each files}}<item href="{{path}}" id="{{path}}" media-type="{{mimetype}}" />{{/each}}
+		{{#each files}}<item href="{{urlencode_path path}}" id="{{chapter_id}}" media-type="{{mimetype}}" />{{/each}}
 	</manifest>
 	<spine toc="ncx">
-		{{#each files}}{{#if toc}}<itemref idref="{{path}}" />{{/if}}{{/each}}
+		{{#each files}}{{#if toc}}<itemref idref="{{chapter_id}}" />{{/if}}{{/each}}
 	</spine>
 	<guide>
-		{{#each reference}}<reference href="{{href}}" title="{{title}}" type="{{type}}" />{{/each}}
+		{{#each reference}}<reference href="{{urlencode_path path}}" title="{{attr title}}" type="{{type}}" />{{/each}}
 	</guide>
 </package>
