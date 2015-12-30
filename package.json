@@ -15,11 +15,14 @@
     "mime": "^1.2.11",
     "node-uuid": "^1.4.1",
     "sanitize-filename": "^1.5.3",
+    "typogr": "^0.6.6",
     "unicode-3.0.1": "^0.1.5",
     "unorm": "^1.4.1",
     "uslug": "^1.0.3",
     "zip-stream": "~0.4.1"
   },
   "author": "LastLeaf <bqfu@163.com> http://lastleaf.me",
-  "contributors": ["Keith Beckman <kbeckman@becknet.com>"]
+  "contributors": [
+    "Keith Beckman <kbeckman@becknet.com>"
+  ]
 }

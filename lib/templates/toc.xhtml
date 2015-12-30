@@ -3,7 +3,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>{{title}}</title>
+    <title>{{#if smarten_titles}}{{smarty title}}{{else}}{{title}}{{/if}}</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <style type="text/css">
     	.toc-entry {
@@ -20,7 +20,11 @@
 <h1>{{toc_title}}</h1>
 {{#each files}}{{#if toc}}
 <p class="toc-entry">
-    <a href="{{urlencode_path path}}">{{add 1 @index}}. {{#if title}}{{title}}{{else}}Chapter {{add 1 @index}}{{/if}}
+    <a href="{{urlencode_path path}}">{{add 1 @index}}.
+    	{{#if title}}
+    		{{#if ../../../smarten_titles}}{{smarty title}}{{else}}{{title}}{{/if}}
+    	{{else}}Chapter {{add 1 @index}}
+    	{{/if}}
         {{#if author}}
         &mdash;<span class="toc-author">{{author}}</span>
         {{/if}}

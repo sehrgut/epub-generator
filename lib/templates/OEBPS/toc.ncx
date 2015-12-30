@@ -8,13 +8,13 @@
 		<meta content="0" name="dtb:maxPageNumber"/>
 	</head>
 	<docTitle>
-		<text>{{title}}</text>
+		<text>{{#if smarten_titles}}{{smarty title}}{{else}}{{title}}{{/if}}</text>
 	</docTitle>
 	<navMap>
 		{{#each files}}{{#if toc}}
 		<navPoint id="navPoint-{{@index}}" playOrder="{{@index}}">
 			<navLabel>
-				<text>{{title}}</text>
+				<text>{{#if ../../smarten_titles}}{{smarty title}}{{else}}{{title}}{{/if}}</text>
 			</navLabel>
 			<content src="{{urlencode_path path}}"/>
 		</navPoint>
